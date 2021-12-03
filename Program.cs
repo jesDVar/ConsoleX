@@ -8,8 +8,9 @@ namespace ConsoleX
         {
             Console.WriteLine("Hello User, Welcome to ConsoleX.");
             Console.WriteLine("This is the main meny where you may choose ");
-            Console.WriteLine("one of the options from 0 - 2.");
+            Console.WriteLine("one of the menus from 1 - 2.");
             MainMeny();
+            
 
 
 
@@ -19,9 +20,12 @@ namespace ConsoleX
         }
         public static void MainMeny()
         {
-            Console.WriteLine("0_Switch");
-            Console.WriteLine("1_Indefinit Loop");
-            Console.WriteLine("2_Menu");
+            Console.WriteLine("Menu 1");
+            Console.WriteLine("Menu 2");
+        }
+
+        private static void UserInput()
+        { 
         }
 
     }
