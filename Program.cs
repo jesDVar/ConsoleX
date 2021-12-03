@@ -17,25 +17,35 @@ namespace ConsoleX
             switch (input) 
             {
                 case "1":
-                    MenuOne
+                    MenuOne();
+                    break;
+                case "2":
+                    MenuTwo();
+                    break;
+                case "3":
+                    MenuThree();
+                    break;
             }
-            
-
-
-
-            // Print out all the options for user.
-            //Console.ReadLine();
-
         }
+        private static void MenuOne()
+        {
+            throw new NotImplementedException();
+        }
+        private static void MenuTwo()
+        {
+            throw new NotImplementedException();
+        }
+        private static void MenuThree()
+        {
+            throw new NotImplementedException();
+        }
+
         public static void MainMeny()
         {
             Console.WriteLine("Menu 1");
             Console.WriteLine("Menu 2");
             Console.WriteLine("Menu 3");
         }
-        public static object MenuOne { get; private set; }
-
-
         private static void UserInput()
         { 
         }
