@@ -7,37 +7,55 @@ namespace ConsoleX
 
         static void Main(string[] args)
         {
+            // Greeting screen passing information about the options.
             Console.WriteLine("Hello User, Welcome to ConsoleX.");
-            Console.WriteLine("This is the main meny where you may choose ");
-            Console.WriteLine("one of the menus from 1 - 3.");
+            Console.WriteLine("This is the Main Meny where You may choose ");
+            Console.WriteLine("one of the three options 1 to 3.");
+            Console.WriteLine(" ");
+            Console.WriteLine("Make your choice And press Enter");
+            Console.WriteLine(" ");            
 
             MainMeny();
+            Console.WriteLine(" ");
 
             var input = Console.ReadLine();
             switch (input) 
             {
                 case "1":
-                    MenuOne();
+                    YouthOrPensioner();
                     break;
                 case "2":
-                    MenuTwo();
+                    TheRepeater();
                     break;
                 case "3":
-                    MenuThree();
+                    TheThirdWord();
                     break;
             }
         }
-        private static void MenuOne()
+        private static void YouthOrPensioner()
         {
-            throw new NotImplementedException();
+            //clear screen
+            Console.Clear();
+            Console.WriteLine("Youth or pensioner.");
+            Console.WriteLine("Enter your age in numbers to recive your ticket");
+            //Instructions: User enters string to confirm their age.
+            string age = Console.ReadLine();
+            //Recive string and convert it to int.
+            //agera på svar
         }
-        private static void MenuTwo()
+        private static void TheRepeater()
         {
-            throw new NotImplementedException();
+            //clear screen
+            Console.Clear();
+            //Instructions
+            Console.WriteLine("Welcome");
         }
-        private static void MenuThree()
+        private static void TheThirdWord()
         {
-            throw new NotImplementedException();
+            //clear screen
+            Console.Clear();
+            //Instructions
+            Console.WriteLine("Welcome");
         }
 
         public static void MainMeny()
