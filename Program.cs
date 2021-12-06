@@ -5,6 +5,7 @@ namespace ConsoleX
     class Program
     {
 
+
         static void Main(string[] args)
         {
             // Greeting screen passing information about the options.
@@ -34,17 +35,32 @@ namespace ConsoleX
         }
         private static void YouthOrPensioner()
         {
+            int age;
+
+
             //clear screen
             Console.Clear();
+
+            //Info, user enters their age to see what kind of a ticket they qualify for.
             Console.WriteLine("Youth or pensioner.");
             Console.WriteLine("Enter your age in numbers to recive your ticket");
-            //Instructions: User enters string to confirm their age.
-            string age = Console.ReadLine();
-            //Try if user input is int with TryParse and if so convert it to int.
-            //age.TryParse();
-            //Run a check to see what kind of ticket is in use.
-            //TicketCheck();
+            
+            //Instructions: Enter age.
+            string userInput = Console.ReadLine();
 
+            //Try if user input is int with TryParse and if so convert it to int.
+            if ((Int32.TryParse(userInput, out age)) && (age <= 110) && (age > 0))
+            {
+                Console.WriteLine("Your age is " + age);
+                //Run a check to see what kind of ticket to give.
+
+
+            }
+            else if (!(Int32.TryParse(userInput, out age)))
+            {
+                Console.WriteLine("You need to enter digits.");
+
+            }
             //Print out the valid ticket.
         }
         private static void TheRepeater()
@@ -64,11 +80,16 @@ namespace ConsoleX
 
         public static void MainMeny()
         {
-            Console.WriteLine("Menu 1");
+            Console.WriteLine("1: Ungdom eller pensionär");
             Console.WriteLine("Menu 2");
             Console.WriteLine("Menu 3");
         }
-        
+        //public static int AgeCheck()
+        //{
+        //   Console.WriteLine(age);
+        //}
+
+
         private static void UserInput()
         { 
         }
