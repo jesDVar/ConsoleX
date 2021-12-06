@@ -68,28 +68,36 @@ namespace ConsoleX
             //clear screen
             Console.Clear();
             //Instructions
-            Console.WriteLine("Welcome");
+            Console.WriteLine("Welcome, please typ one word and hit enter.");
+            string word = Console.ReadLine();
+            int count = 0;
+            Console.Clear();
+
+            while (count < 10)
+            {
+                Console.WriteLine(word);
+                count++;
+            }
         }
         private static void TheThirdWord()
         {
             //clear screen
             Console.Clear();
             //Instructions
-            Console.WriteLine("Welcome");
+            Console.WriteLine("Function not available for the moment");
         }
 
         public static void MainMeny()
         {
             Console.WriteLine("1: Ungdom eller pensionär");
-            Console.WriteLine("Menu 2");
+            Console.WriteLine("2: Uppreparen");
             Console.WriteLine("Menu 3");
         }
+        //Not able to create a AgeCheck method.
         //public static int AgeCheck()
         //{
         //   Console.WriteLine(age);
         //}
-
-
         private static void UserInput()
         { 
         }
