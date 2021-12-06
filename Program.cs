@@ -40,8 +40,12 @@ namespace ConsoleX
             Console.WriteLine("Enter your age in numbers to recive your ticket");
             //Instructions: User enters string to confirm their age.
             string age = Console.ReadLine();
-            //Recive string and convert it to int.
-            //agera på svar
+            //Try if user input is int with TryParse and if so convert it to int.
+            //age.TryParse();
+            //Run a check to see what kind of ticket is in use.
+            //TicketCheck();
+
+            //Print out the valid ticket.
         }
         private static void TheRepeater()
         {
@@ -64,6 +68,7 @@ namespace ConsoleX
             Console.WriteLine("Menu 2");
             Console.WriteLine("Menu 3");
         }
+        
         private static void UserInput()
         { 
         }
