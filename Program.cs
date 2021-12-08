@@ -33,10 +33,10 @@ namespace ConsoleX
                     break;
             }
         }
-        private static void YouthOrPensioner()
+        public static void YouthOrPensioner()
         {
-            int age;
 
+            int age;
 
             //clear screen
             Console.Clear();
@@ -61,6 +61,7 @@ namespace ConsoleX
                 Console.WriteLine("You need to enter digits.");
 
             }
+            //Run a ticket validation
             //Print out the valid ticket.
         }
         private static void TheRepeater()
@@ -68,7 +69,7 @@ namespace ConsoleX
             //clear screen
             Console.Clear();
             //Instructions
-            Console.WriteLine("Welcome, please typ one word and hit enter.");
+            Console.WriteLine("Welcome, please typ one word and hit enter, the word will repeat it self 10 times.");
             string word = Console.ReadLine();
             int count = 0;
             Console.Clear();
@@ -93,14 +94,15 @@ namespace ConsoleX
             Console.WriteLine("2: Uppreparen");
             Console.WriteLine("Menu 3");
         }
+
         //Not able to create a AgeCheck method.
-        //public static int AgeCheck()
+        //public static int AgeCheck(age)
         //{
-        //   Console.WriteLine(age);
+        //   return ;
         //}
-        private static void UserInput()
-        { 
-        }
+        //private static void UserInput()
+        //{ 
+        //}
 
     }
 }
