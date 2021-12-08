@@ -59,25 +59,30 @@ namespace ConsoleX
             else if (!(Int32.TryParse(userInput, out age)))
             {
                 Console.WriteLine("You need to enter digits.");
-
             }
-            //Run a ticket validation
+
+            //Run a ticket validation.
             //Print out the valid ticket.
+
         }
         private static void TheRepeater()
         {
+
+            int index = 1;
+            int count = 0;
+
             //clear screen
             Console.Clear();
             //Instructions
             Console.WriteLine("Welcome, please typ one word and hit enter, the word will repeat it self 10 times.");
             string word = Console.ReadLine();
-            int count = 0;
             Console.Clear();
 
             while (count < 10)
             {
-                Console.WriteLine(word);
+                Console.Write(index + ": " + word + " ");
                 count++;
+                index++;
             }
         }
         private static void TheThirdWord()
