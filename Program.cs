@@ -14,13 +14,13 @@ namespace ConsoleX
             Console.WriteLine("one of the three options 1 to 3.");
             Console.WriteLine(" ");
             Console.WriteLine("Make your choice And press Enter");
-            Console.WriteLine(" ");            
+            Console.WriteLine(" ");
 
             MainMeny();
             Console.WriteLine(" ");
 
             var input = Console.ReadLine();
-            switch (input) 
+            switch (input)
             {
                 case "1":
                     YouthOrPensioner();
@@ -44,7 +44,7 @@ namespace ConsoleX
             //Info, user enters their age to see what kind of a ticket they qualify for.
             Console.WriteLine("Youth or pensioner.");
             Console.WriteLine("Enter your age in numbers to recive your ticket");
-            
+
             //Instructions: Enter age.
             string userInput = Console.ReadLine();
 
@@ -70,26 +70,26 @@ namespace ConsoleX
             int index = 1;
 
 
-            //clear screen
+            //clear screen.
             Console.Clear();
-            //Instructions
+            //Instructions.
             Console.WriteLine("Welcome, please typ one word and hit enter, the word will repeat it self 10 times.");
             string word = Console.ReadLine();
             Console.Clear();
 
-            for (int count = 0; count < 10; count++) 
+            for (int count = 0; count < 10; count++)
             {
                 Console.Write(index + ": " + word + ", ");
                 index++;
-                
             }
         }
         private static void TheThirdWord()
         {
-            //clear screen
+            //clear screen.
             Console.Clear();
-            //Instructions
-            Console.WriteLine("Function not available for the moment");
+            //Instructions.
+            Console.WriteLine("Enter a sentence with at LEAST three words.");
+            string sentence = Console.ReadLine();
         }
 
         public static void MainMeny()
