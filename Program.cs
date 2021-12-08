@@ -67,9 +67,8 @@ namespace ConsoleX
         }
         private static void TheRepeater()
         {
-
             int index = 1;
-            int count = 0;
+
 
             //clear screen
             Console.Clear();
@@ -78,11 +77,11 @@ namespace ConsoleX
             string word = Console.ReadLine();
             Console.Clear();
 
-            while (count < 10)
+            for (int count = 0; count < 10; count++) 
             {
-                Console.Write(index + ": " + word + " ");
-                count++;
+                Console.Write(index + ": " + word + ", ");
                 index++;
+                
             }
         }
         private static void TheThirdWord()
@@ -97,16 +96,13 @@ namespace ConsoleX
         {
             Console.WriteLine("1: Ungdom eller pensionär");
             Console.WriteLine("2: Uppreparen");
-            Console.WriteLine("Menu 3");
+            Console.WriteLine("3: Det tredje ordet");
         }
 
         //Not able to create a AgeCheck method.
         //public static int AgeCheck(age)
         //{
         //   return ;
-        //}
-        //private static void UserInput()
-        //{ 
         //}
 
     }
