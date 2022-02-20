@@ -6,13 +6,9 @@ namespace ConsoleX
     {
         static void Main(string[] args)
         {
-            // Greeting screen passing information about the options.
-            Console.WriteLine("Hello User, Welcome to ConsoleX.");
-            Console.WriteLine("This is the Main Meny where You may choose ");
-            Console.WriteLine("one of the three options 1 to 3.");
-            Console.WriteLine(" ");
-            Console.WriteLine("Make your choice And press Enter");
-            Console.WriteLine(" ");
+            //SplashScreen splashScreen = new();
+
+            SplashScreen.ShowScreen();
 
             MainMeny();
             Console.WriteLine(" ");
@@ -85,7 +81,7 @@ namespace ConsoleX
 
             for (int i = 0; i < int.Parse(numberOfVisitors); i++)
             {
-                Console.WriteLine($"Enter age of visitor nr {i+1}");
+                Console.WriteLine($"Enter age of visitor nr {i + 1}");
                 string age = Console.ReadLine();
                 totalPrice = totalPrice + GetPrice(int.Parse(age));
             }
@@ -95,7 +91,7 @@ namespace ConsoleX
 
         private static int GetPrice(int age)
         {
- 
+
 
             if (age < 20)
             {
@@ -111,7 +107,7 @@ namespace ConsoleX
             }
 
 
-            
+
         }
 
         private static void TheRepeater()
@@ -127,7 +123,7 @@ namespace ConsoleX
             for (int count = 1; count < 11; count++)
             {
                 Console.Write(count + ": " + word + ", ");
-                
+
             }
         }
         private static void TheThirdWord()
