@@ -38,7 +38,6 @@ namespace ConsoleX
 
             int age;
 
-            //clear screen
             Console.Clear();
 
             //Info, user enters their age to see what kind of a ticket they qualify for.
@@ -70,9 +69,7 @@ namespace ConsoleX
             int index = 1;
 
 
-            //clear screen.
             Console.Clear();
-            //Instructions.
             Console.WriteLine("Welcome, please typ one word and hit enter, the word will repeat it self 10 times.");
             string word = Console.ReadLine();
             Console.Clear();
@@ -85,9 +82,7 @@ namespace ConsoleX
         }
         private static void TheThirdWord()
         {
-            //clear screen.
             Console.Clear();
-            //Instructions.
             Console.WriteLine("Enter a sentence with at LEAST three words.");
             string sentence = Console.ReadLine();
         }
