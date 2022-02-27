@@ -6,12 +6,22 @@ namespace ConsoleX
     {
         static void Main(string[] args)
         {
-            //SplashScreen splashScreen = new();
 
-            SplashScreen.ShowScreen();
+            //SplashScreen.ShowScreen();
+            ShowScreen();
+            bool running = true;
+            while(running)
+            {
+                MainMeny();
+                UserOptions();
 
-            MainMeny();
+            }
+
             Console.WriteLine(" ");
+        }
+
+        private static void UserOptions()
+        {
 
             var input = Console.ReadLine();
             switch (input)
@@ -30,9 +40,13 @@ namespace ConsoleX
                     break;
             }
         }
-
-
-
+        private static void ShowScreen()
+        {
+            Console.WriteLine("Choose one of the three options 1 to 3.");
+            Console.WriteLine(" ");
+            Console.WriteLine("Make your choice And press Enter");
+            Console.WriteLine(" ");
+        }
         public static void YouthOrPensioner()
         {
 
@@ -105,9 +119,6 @@ namespace ConsoleX
             {
                 return 90;
             }
-
-
-
         }
 
         private static void TheRepeater()
@@ -132,10 +143,12 @@ namespace ConsoleX
             Console.WriteLine("Enter a sentence with at LEAST three words.");
             string sentence = Console.ReadLine();
             var splitSentence = sentence.Split(' ', StringSplitOptions.RemoveEmptyEntries);
-            //  "           hej             jag           heter   David        " => ["hej","jag","heter","david"]
             Console.WriteLine($"The third word is: {splitSentence[2]}");
-            var splitSentenceLength = splitSentence.Length;
+            //var splitSentenceLength = splitSentence.Length;
 
+            Console.WriteLine("Press enter to return to home screen.");
+            Console.ReadLine();
+           
         }
         //david-nokto
         public static void MainMeny()
@@ -143,7 +156,7 @@ namespace ConsoleX
             Console.WriteLine("1: Ungdom eller pensionär");
             Console.WriteLine("2: Uppreparen");
             Console.WriteLine("3: Det tredje ordet");
-            Console.WriteLine("4: Grupp Bio Besök");
+            Console.WriteLine("4: Bio Besök");
         }
 
         //Not able to create a AgeCheck method.
